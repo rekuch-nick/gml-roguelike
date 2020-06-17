@@ -276,6 +276,8 @@ if(!moving && etanks > 0 && (sp < msp || ep < mep)){
 	}
 }
 
+//
+
 
 
 if(keyboard_check_pressed(ord("I")) || ( mouse_check_button_pressed(mb_left) && clickSystem)){
