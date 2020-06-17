@@ -18,8 +18,18 @@ if(n == 4){
 	return "I know why you're here, stranger. There's only one reason to come to Maze-World. You seek the OMNI-CORE. {break} While there's only one reason to come here, there are many reasons to desire the OMNI-CORE. Are you like me, seeking its limitless energy potential as our universe's last defence against entropy? Or are you like the madmen who built this place, desiring only to hord power for your own sake?";
 }
 
+if(n == 5){
+	return "...";
+}
+
+
 if(n == 10){
 	return "Have you found a System Terminal yet? {system} If you [~] Hack into one you can connect to it and pose as one of its worker drones. While connected, you'll gain System Points each time you take an action that system approves of. {break} You can spend those points on the system menu. Press [I] or click the icon to view it. {break} You can change systems anytime you find a terminal, but doing so costs half your System Points.";
 }
+
+if(n == 31){
+	return "Some of the abilities and powers have hidden unique interactoins. {break} For example, fire attacks made by the [2] Flame Thrower and [6] Rocket Boost can proc, but will not reset the stacking proc chance granted by Inevitably Matrix.";
+}
+
 
 return "...";

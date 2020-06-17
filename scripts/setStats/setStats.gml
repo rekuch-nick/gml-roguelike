@@ -72,23 +72,23 @@ hasSkill[6] = false;
 if(talent[13]){ hasSkill[6] = true; }
 
 
-skillCost[0] = 4;
-skillCost[1] = 4;
-skillCost[2] = 6;
+skillCost[0] = 12;
+skillCost[1] = 6;
+skillCost[2] = 10;
 skillCost[3] = 1;
 skillCost[4] = 1;
-skillCost[5] = 2;
-skillCost[6] = 2;
+skillCost[5] = 6;
+skillCost[6] = 15;
 
-cost3[0] = 2;
-cost3[1] = 4;
-cost3[2] = 8;
-cost3[3] = 4;
+cost3[0] = 5;
+cost3[1] = 10;
+cost3[2] = 20;
+cost3[3] = 20;
 
 cost4[0] = 1;
-cost4[1] = 4;
-cost4[2] = 8;
-cost4[3] = 8;
+cost4[1] = 10;
+cost4[2] = 20;
+cost4[3] = 20;
 
 powToUse2 = 5;
 powToUse3 = 10;

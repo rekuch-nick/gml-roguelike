@@ -1,6 +1,6 @@
-_mhp = 10;
+_mhp = 20;
 _msp = 10;
-_mep = 10;
+_mep = 30;
 _spCharge = 1;
 _epCharge = 1;
 _map = 4;

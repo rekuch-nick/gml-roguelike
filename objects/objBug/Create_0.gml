@@ -1,6 +1,6 @@
 event_inherited();
 
-
+drop = 0;
 hp = 4;
 mhp = 4;
 

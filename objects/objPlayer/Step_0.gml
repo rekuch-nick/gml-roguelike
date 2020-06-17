@@ -288,7 +288,7 @@ if(( mouse_check_button_pressed(mb_left) && clickSign)){
 
 //skill input
 if(!moving){
-	if(ep >= skillCost[0] && (keyboard_check_pressed(192) || mouse_check_button_pressed(mb_left) && clickSkill == 0) ){ aiming = 0; }
+	if(ep >= skillCost[0] && (keyboard_check_pressed(192) || keyboard_check_pressed(ord("H")) || (mouse_check_button_pressed(mb_left) && clickSkill == 0)) ){ aiming = 0; }
 	if(ep >= skillCost[1] && (keyboard_check_pressed(ord("1")) || mouse_check_button_pressed(mb_left) && clickSkill == 1) ){ aiming = 1; }
 	if(ep >= skillCost[2] && hasSkill[2] && (keyboard_check_pressed(ord("2")) || mouse_check_button_pressed(mb_left) && clickSkill == 2) ){ aiming = 2; }
 	if(hasSkill[3] && (keyboard_check_pressed(ord("3")) || mouse_check_button_pressed(mb_left) && clickSkill == 3) ){ aiming = 3; }

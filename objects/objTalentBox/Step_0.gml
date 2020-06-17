@@ -23,7 +23,7 @@ if(ww.buildScreen.image_index == 0){
 		if(num == 12){ desc = "Enable [5], which builds a drone to fight for you"; }
 		if(num == 13){ desc = "Enable [6], a jump that goes over walls and leaves fire behind"; }
 		if(num == 14){ desc = "[1] Lightning Cannon shots gain new abilities as your AIM improves"; }
-		if(num == 15){ desc = "SP Charge can apply to EP when SP is full, and \nEP Charge can apply to SP when EP is full"; }
+		if(num == 15){ desc = "SP Charge can apply to EP when SP is full"; }
 		
 		
 		if(num == 16){ desc = "Start with 2 Keys, 2 Bombs, and an E-Tank"; }

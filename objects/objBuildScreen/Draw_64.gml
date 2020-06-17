@@ -23,6 +23,8 @@ if(image_index == 0){
 	draw_set_font(fntPlain);
 	draw_text(990, -10, "Use Normal");
 	draw_text(990, 20, "Building Mode");
+	
+	draw_text(20, 600, "(Press [1], [2], [3], [4], [5], or [6] to copy one of the normal class templates.)");
 }
 
 

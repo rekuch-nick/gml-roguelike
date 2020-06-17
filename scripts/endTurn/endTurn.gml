@@ -19,10 +19,10 @@ if(!hasStatus(imgStatusNoEPC)){
 	ep = clamp(ep + epCharge, 0, mep);
 }
 
-while(sp < msp && talent[15] && unusedEP > 0){
-	unusedEP --;
-	sp ++;
-}
+//while(sp < msp && talent[15] && unusedEP > 0){
+//	unusedEP --;
+//	sp ++;
+//}
 
 while(ep < mep && talent[15] && unusedSP > 0){
 	unusedSP --;

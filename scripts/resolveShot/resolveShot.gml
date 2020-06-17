@@ -52,7 +52,10 @@ if(t != noone && t.foe){
 
 		var s = instance_create_depth(t.xSpot * 60 + 30, t.ySpot * 60 + 30, -9000, objEffect);
 		s.text = string(damage);
-		if(isProc){ s.text = s.text + "!"; }
+		if(isProc){ 
+			pc.stackingCritBonus = 0; pc.checkStats = true;
+			s.text = s.text + "!"; 
+		}
 		s.textColor = c_white;
 
 	}

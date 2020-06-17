@@ -51,7 +51,7 @@ if(pc.system == "build"){
 
 if(pc.system == "comm"){
 	draw_text(100, 160, "Connected to Communication systems.");
-	draw_text(100, 200, "Gain points by ending a turn with 10% or less SP.");
+	draw_text(100, 200, "Gain points by ...");
 	costA = 50; costB = 100;
 	
 	draw_set_color(c_black);

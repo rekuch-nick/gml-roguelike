@@ -19,6 +19,9 @@ if(newRun){
 if(newStage){
 	worldGen();
 	newStage = false;
+	pc.sp = pc.msp;
+	pc.ep = pc.mep;
+	pc.ap = pc.map;
 }
 
 

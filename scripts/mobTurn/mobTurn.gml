@@ -32,6 +32,7 @@ for(var oop = 0; oop<2; oop++){
 			if(ww.mmap[tx, ty] != noone && ww.mmap[tx, ty].foe != foe){
 				mobAttack(ww.mmap[xSpot, ySpot], ww.mmap[tx, ty]);
 				ap --;
+				d = 5;
 				continue;
 			}
 		}

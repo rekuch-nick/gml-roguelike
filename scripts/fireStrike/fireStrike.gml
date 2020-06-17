@@ -23,6 +23,7 @@ if(t != noone && t.foe){
 	
 		isProc = true;
 		damage *= 1 + (procPower / 100);
+		
 	}
 
 	//reduce damage by t heat res
