@@ -27,6 +27,10 @@ while(!okay && tries < 1000){
 if(okay){
 	var t = ww.commonMob;
 	if(irandom_range(0, 5) == 0){ t = ww.rareMob; }
+	if(ww.timeInDeep % 15 == 0){
+		ww.timeInDeep ++;
+		t = ww.huntMob;
+	}
 	ww.mmap[a, b] = instance_create_depth(a * 60 + 30, b * 60 + 30, -2004 - (b * 10), t);
 	ww.mmap[a, b].xSpot = a;
 	ww.mmap[a, b].ySpot = b;

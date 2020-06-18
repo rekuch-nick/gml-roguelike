@@ -1,5 +1,6 @@
 //score: called from pc
 
+ww.timeInDeep ++;
 pc.checkStats = true;
 
 ap = map;

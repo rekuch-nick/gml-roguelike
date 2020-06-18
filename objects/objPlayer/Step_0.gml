@@ -47,6 +47,24 @@ if(debugMode){
 			return;
 		}
 		
+		if(keyboard_check_pressed(ord("3"))){
+			systemPoints = 100;
+		}
+		
+		if(keyboard_check_pressed(ord("4"))){
+			_mhp = 1000;
+			hp = 1000;
+			_mep = 1000;
+			ep = 1000;
+			talent[9] = true;
+			talent[10] = true;
+			talent[11] = true;
+			talent[12] = true;
+			talent[13] = true;
+			talent[25] = true;
+			checkStats = true;
+		}
+		
 		
 	}
 }

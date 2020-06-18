@@ -11,3 +11,4 @@ mhp = 8;
 atkRange = 4;
 atkPlus = 2;
 atkType = "";
+proc = 0;

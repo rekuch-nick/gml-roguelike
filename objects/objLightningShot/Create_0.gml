@@ -6,3 +6,4 @@ timeless = true;
 resolveOnHit = true;
 passwall = false;
 requireBounds = true;
+usePris = true;

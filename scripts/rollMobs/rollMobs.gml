@@ -39,7 +39,6 @@ do {
 } until(rareMob != lastRareMob)
 lastRareMob = rareMob;
 
-
-
 waterMob = objJelly;
 bugMob = objBug;
+huntMob = objKillbot;

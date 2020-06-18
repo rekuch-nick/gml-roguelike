@@ -97,15 +97,9 @@ for(var oop = 0; oop<2; oop++){
 			if(allyRoam == "right"){ tx ++; }
 			if(allyRoam == "down"){ ty ++; }
 			if(allyRoam == "left"){ tx --; }
-		
-		
-			if(inBounds(tx, ty) && ww.bmap[tx, ty] == noone && ww.mmap[tx, ty] == noone && (tx != pc.xSpot || ty != pc.ySpot)){
-				var xx = xSpot; var yy = ySpot;
-				xSpot = tx; ySpot = ty;
-				ww.mmap[tx, ty] = ww.mmap[xx, yy];
-				ww.mmap[xx, yy] = noone;
-				ap --;
-			} else {
+			ap --;
+			
+			if(!mobStep(tx, ty, false)){
 				var newDir = "";
 				do {
 					var r = irandom_range(1, 4);
@@ -114,14 +108,26 @@ for(var oop = 0; oop<2; oop++){
 					if(r == 3){ newDir = "down"; }
 					if(r == 4){ newDir = "left"; }
 				} until (newDir != allyRoam)
-				allyRoam = newDir;
+				allyRoam = newDir;	
 			}
+			
 		}
 		dontStep = false;
 	
 		if(ap < 1){ continue; }
 	
-	
+		if(huntPlayer && !dontStep){
+			
+			pathFind(xSpot, ySpot, pc.xSpot, pc.ySpot, false);
+			mobStep(xNext, yNext, true);
+			ap --;
+			
+		}
+		
+		if(ap < 1){ continue; }
+		
+		
+		
 	}
 	
 }

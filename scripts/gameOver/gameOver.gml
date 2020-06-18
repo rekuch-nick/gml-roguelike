@@ -1,3 +1,4 @@
+with(objStatus){ instance_destroy(); }
 pc.deep = 0;
 pc.image_angle = 0;
 pc.xSpot = 5;

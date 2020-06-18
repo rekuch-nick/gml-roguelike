@@ -19,7 +19,19 @@ if(n == 4){
 }
 
 if(n == 5){
-	return "...";
+	return "How are you holding up against the monsters? If you've made it this far, surely you've had to fight. {break}As far as I can tell, the creatures here aren't sentient, sapient, or intelligent. Whether made of flesh or steel they're mindless drone with one goal- seek out and destroy intruders. {break} The more time you spend in any one deep, the more monsters will come after you. If you move too slowly, more and more powerful monsters may begin to appear.";
+}
+
+if(n == 6){
+	return "Have you found any bombs yet? Using a bomb doesn't cost any AP, so it can be a good way to deal with several monsters quickly, but that's not usually the best use for them. {break} Bombs can destroy most walls and traps. As you get deeper and the maze becomes more complex, bombs can save your life. You can only carry a few at a time, so spend them well. {break} Hidden somwhere is an upgrade that will improve all of your bombs.";
+}
+
+if(n == 7){
+	return "No matter how skilled of an engineer you are, no one is prepared to design for an enviroment like Maze-World. {break} If you've tried Advanced Building Mode, you've surely noticed that you can only activate a limited number of your systems. As you progress deeper into Maze-World you'll learn more about how the laws of physics bend here, and be able to send mechs with more talents.";
+}
+
+if(n == 8){
+	return "";
 }
 
 

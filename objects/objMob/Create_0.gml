@@ -13,6 +13,7 @@ foe = true;
 
 pointAtPlayer = false;
 
+huntPlayer = false;
 regen = 0;
 isRobot = false;
 allyRoam = "";

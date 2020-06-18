@@ -21,6 +21,11 @@ while(d > 0){
 	hpLost ++;
 }
 
+
+if(spLost > 0 && pc.sp < 1 && pc.system == "comm"){
+	pc.systemPoints += 8;
+}
+
 var s = instance_create_depth(pc.xSpot * 60 + 30, pc.ySpot * 60 + 30, -9000, objEffect);
 s.text = "-" + string(spLost);
 s.textColor = c_orange;

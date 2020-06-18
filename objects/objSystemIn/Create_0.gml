@@ -15,4 +15,6 @@ do {
 	if(system == 4){ sprite_index = imgSystemInComm; }
 	if(system == 5){ sprite_index = imgSystemInTrans; }
 	
-} until (system != sysNum)
+} until (system != sysNum && system != pc.lastSystem)
+
+pc.lastSystem = system;

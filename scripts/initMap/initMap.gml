@@ -16,6 +16,13 @@ for(var a=0; a<xBounds; a++){
 		if(ts == "water"){ t = objWater; }
 		if(ts == "acid"){ t = objAcid; }
 		if(ts == "lava"){ t = objLava; }
+		if(ts == "prisim"){ t = objPrisim; }
+		if(ts == "scope"){ t = objScope; }
+		if(ts == "shovel"){ t = objShovel; }
+		if(ts == "pox"){ t = objPox; }
+		if(ts == "pox2"){ t = objPox2; }
+		if(ts == "skillpod"){ t = objSkillPod; }
+		
 		
 		if(t != noone){
 			fmap[a, b] = instance_create_depth(a * 60, b * 60, -2000 - (b * 10), t);

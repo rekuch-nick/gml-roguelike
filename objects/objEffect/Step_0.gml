@@ -59,11 +59,35 @@ if(!passwall){
 	if(ww.bmap[floor(x / 60), floor(y / 60)] != noone){ remove = true; }
 }
 
+if(usePris && prisCD == 0){
+	if(ww.fmap[floor(x / 60), floor(y / 60)] != noone && ww.fmap[floor(x / 60), floor(y / 60)].object_index == objPrisim){
+		
+		prisCD = 5;
+	
+		if(xSpeed == 0){
+			show_debug_message(123)
+			
+			var s = instance_create_depth(floor(x / 60) * 60 + 30, floor(y / 60) * 60 + 30, -9000, object_index);
+			s.xSpeed = -15; s.ySpeed = 0; s.prisCD = 5;
+			var s = instance_create_depth(floor(x / 60) * 60 + 30, floor(y / 60) * 60 + 30, -9000, object_index);
+			s.xSpeed = 15; s.ySpeed = 0; s.prisCD = 5;
+		}
+		if(ySpeed == 0){
+			var s = instance_create_depth(floor(x / 60) * 60 + 30, floor(y / 60) * 60 + 30, -9000, object_index);
+			s.xSpeed = 0; s.ySpeed = 15; s.prisCD = 5;
+			var s = instance_create_depth(floor(x / 60) * 60 + 30, floor(y / 60) * 60 + 30, -9000, object_index);
+			s.xSpeed = 0; s.ySpeed = -15; s.prisCD = 5;
+		}
+	}
+}
+if(prisCD > 0){prisCD --; }
+
 
 if(resolveOnHit && ww.mmap[floor(x / 60), floor(y / 60)] != noone && ww.mmap[floor(x / 60), floor(y / 60)].foe){
 	resolveShot(object_index, floor(x / 60), floor(y / 60));
 	remove = true;
 }
+
 
 
 

@@ -24,7 +24,8 @@ passwall = true;
 requireBounds = false;
 
 
-
+prisCD = 0;
+usePris = false;
 
 afterDamage = 0;
 afterNote = "-";

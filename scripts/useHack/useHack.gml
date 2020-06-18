@@ -17,7 +17,7 @@ var trapToHack = false;
 
 if(ww.bmap[a, b] != noone && (ww.bmap[a, b].object_index == objDoor || ww.bmap[a, b].object_index == objChest )){ lockToHack = true; }
 if(ww.bmap[a, b] != noone && (ww.bmap[a, b].object_index == objSystemIn && ww.bmap[a, b].system != 0)){ systemToHack = true; }
-if(ww.mmap[a, b] != noone && ww.mmap[a, b].isRobot){ robotToHack = true; }
+if(ww.mmap[a, b] != noone && ww.mmap[a, b].isRobot && ww.mmap[a, b].foe){ robotToHack = true; }
 if(ww.tmap[a, b] != noone && ww.tmap[a, b].canHack){ trapToHack = true; }
 
 if(!lockToHack && !systemToHack && !robotToHack && !trapToHack){ return; }
@@ -109,6 +109,17 @@ if(hackRoll >= dc){
 			instance_destroy(ww.tmap[a, b]);
 			ww.tmap[a, b] = noone;
 		}
+	}
+	
+	if(ww.mmap[a, b] != noone && ww.mmap[a, b].isRobot){
+		ww.mmap[a, b].foe = false;
+		ww.mmap[a, b].mhp *= 4;
+		ww.mmap[a, b].hp = ww.mmap[a, b].mhp;
+			
+		var s = instance_create_depth(a * 60 + 30, b * 60 + 30, -9000, objEffect);
+		s.text = "Hacked";
+		s.textColor = c_lime;
+	
 	}
 	
 	

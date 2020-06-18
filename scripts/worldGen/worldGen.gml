@@ -14,7 +14,7 @@ pc.deep ++;
 var sizeMod = floor(pc.deep / 2);
 sizeMod = clamp(sizeMod, 0, 20);
 
-
+timeInDeep = 0;
 
 
 
@@ -97,6 +97,9 @@ placeTreasure("");
 if(pc.deep >= 11){ placeSystem(); }
 
 //bmap[7, 7] = ""; fmap[7, 7] = "pod";
+
+//makeFloorByPercent("prisim", 10);
+//makeFloorByPercent("skillpod", 10);
 
 if(hazGrass){ makeGrass(); }
 

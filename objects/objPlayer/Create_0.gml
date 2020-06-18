@@ -25,7 +25,7 @@ setBaseStats();
 
 
 
-
+lastSystem = 0;
 
 foe = false;
 canAttack = true;
