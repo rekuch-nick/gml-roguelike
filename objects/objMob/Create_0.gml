@@ -32,7 +32,7 @@ resistEnergy = 0;
 atkRange = 4;
 atkMin = 1;
 atkPlus = 0;
-atkType = 1;
+atkType = 0;
 dmgType = "";
 
 shotDamageRange = 4;

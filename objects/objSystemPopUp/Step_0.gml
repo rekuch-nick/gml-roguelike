@@ -71,7 +71,36 @@ if(clickB && mouse_check_button_pressed(mb_left)){
 	}
 	if(pc.system == "trans"){
 		// summon ally
-		pc.systemPoints -= costB; pc.mouseReleased = false; ww.popUp = noone; instance_destroy();
+		
+		var tries = 0;
+		while(tries < 1000){
+			tries ++;
+			var a = pc.xSpot + irandom_range(-1, 1);
+			var b = pc.ySpot + irandom_range(-1, 1);
+			if(tries > 50){
+				a = pc.xSpot + irandom_range(-2, 2);
+				b = pc.ySpot + irandom_range(-2, 2);
+			}
+			if(tries > 200){
+				a = pc.xSpot + irandom_range(-3, 3);
+				b = pc.ySpot + irandom_range(-3, 3);
+			}
+			if(tries > 500){
+				a = pc.xSpot + irandom_range(-6, 6);
+				b = pc.ySpot + irandom_range(-6, 6);
+			}
+			if(!inBounds(a, b)){ continue; }
+			if(pc.xSpot == a && pc.ySpot == b){ continue; }
+			if(ww.mmap[a, b] != noone){ continue; }
+			if(ww.bmap[a, b] != noone){ continue; }
+			break;
+		}
+		if(tries < 1000){
+			spawnMob(objBot06, a, b);
+			ww.mmap[a, b].foe = false;
+			ww.mmap[a, b].dontStep = true;
+			pc.systemPoints -= costB; pc.mouseReleased = false; ww.popUp = noone; instance_destroy();
+		}
 	}
 	
 	

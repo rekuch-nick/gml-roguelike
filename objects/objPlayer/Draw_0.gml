@@ -11,6 +11,29 @@ if(debugMode){
 	image_yscale = 4;
 }
 
+if(ww.fmap[xSpot, ySpot].object_index == objWater){
+	draw_set_color(c_blue);
+	draw_set_alpha(.5);
+	draw_rectangle(x-30, y, x + 30, y + 30, false);
+	draw_set_alpha(1);
+}
+if(ww.fmap[xSpot, ySpot].object_index == objAcid){
+	draw_set_color(c_green);
+	draw_set_alpha(.5);
+	draw_rectangle(x-30, y, x + 30, y + 30, false);
+	draw_set_alpha(1);
+}
+if(ww.fmap[xSpot, ySpot].object_index == objLava){
+	draw_set_color(c_red);
+	draw_set_alpha(.5);
+	draw_rectangle(x-30, y, x + 30, y + 30, false);
+	draw_set_alpha(1);
+}
+
+
+
+
+
 if(sp > 0 && aiming == -1){ draw_sprite_stretched_ext(imgShield, irandom_range(1, 2), x-29, y-29, 61, 61, c_white, sp / msp); }
 
 if(aiming == 0){

@@ -12,6 +12,10 @@ if(a >= x && a < x + 40 && b >= y && b < y + 40){
 		pc.helpText = "Power Attack: Your next attack will deal 10 more damage.";
 	}
 	
+	if(sprite_index == imgStatusComboAttack){
+		pc.helpText = "Combo Attack: Your next attack will deal 4 more damage.";
+	}
+	
 	if(sprite_index == imgStatusEvadeUp){
 		pc.helpText = "Evade Up: +10% to dodge.";
 	}

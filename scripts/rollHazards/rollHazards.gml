@@ -12,8 +12,9 @@ hazHardHack = false;
 
 
 
-
-while(hp > 0){
+var tries = 0;
+while(hp > 0 && tries < 1000){
+	tries ++;
 	var r = irandom_range(1, 10);
 	if(r == 1 && pc.deep > 25 && !hazDangerousWater && hasWater){ hazDangerousWater = true; waterType = "acid"; hp --; }
 	if(r == 2 && pc.deep > 50 && !hazDangerousWater && hasWater){ hazDangerousWater = true; waterType = "lava"; hp --; }

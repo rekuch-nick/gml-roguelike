@@ -40,7 +40,7 @@ while(ds_list_size(tipsToShow) > 0){
 		var s = "Melee procs give SP.";
 	}
 	if(t == "Combo Chain"){
-		var s = "Attacks made right after a [1] shot do more damage.";
+		var s = "Using the [1] Lightning Cannon makes your next attack do more damage.";
 	}
 	
 	draw_set_color(c_black);

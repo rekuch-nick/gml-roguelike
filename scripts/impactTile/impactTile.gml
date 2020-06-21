@@ -5,7 +5,7 @@ var note = argument2;
 
 if(ww.bmap[a, b] != noone){
 	var t = ww.bmap[a, b].object_index;
-	if(note == "bomb"){
+	if(note == "bomb" || note == "shovel"){
 		if(t == objWall){
 			pleaseSystem("build", 2);
 			instance_destroy(ww.bmap[a, b]);
@@ -38,6 +38,12 @@ if(ww.fmap[a, b] != noone){
 	var t = ww.fmap[a, b].object_index;
 	if(note == "bomb" || note == "fire"){
 		if(t == objGrass){
+			instance_destroy(ww.fmap[a, b]);
+			ww.fmap[a, b] = instance_create_depth(a * 60, b * 60, -2000 - (b * 10), objFloor);
+		}
+	}
+	if(note == "bomb"){
+		if(t == objPox || t == objPox2){
 			instance_destroy(ww.fmap[a, b]);
 			ww.fmap[a, b] = instance_create_depth(a * 60, b * 60, -2000 - (b * 10), objFloor);
 		}

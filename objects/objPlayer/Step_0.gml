@@ -49,6 +49,7 @@ if(debugMode){
 		
 		if(keyboard_check_pressed(ord("3"))){
 			systemPoints = 100;
+			scrap = 1000000;
 		}
 		
 		if(keyboard_check_pressed(ord("4"))){

@@ -16,7 +16,11 @@ var s = instance_create_depth(xSpot * 60 + 30, ySpot * 60 + 30, -9000, objLightn
 s.xSpeed = sx;
 s.ySpeed = sy;
 			
-
+if(!hasStatus(imgStatusComboAttack) && hasPower("Combo Chain")){
+	var s = instance_create_depth(0, 0, -6001, objStatus);
+	s.sprite_index = imgStatusComboAttack;
+	s.isBuff = true; s.deeps = -1;
+}
 
 
 ep -= skillCost[1];

@@ -19,7 +19,7 @@ if(n == 4){
 }
 
 if(n == 5){
-	return "How are you holding up against the monsters? If you've made it this far, surely you've had to fight. {break}As far as I can tell, the creatures here aren't sentient, sapient, or intelligent. Whether made of flesh or steel they're mindless drone with one goal- seek out and destroy intruders. {break} The more time you spend in any one deep, the more monsters will come after you. If you move too slowly, more and more powerful monsters may begin to appear.";
+	return "How are you holding up against the monsters? If you've made it this far, surely you've had to fight. {break} As far as I can tell, the creatures here aren't sentient, sapient, or intelligent. Whether made of flesh or steel they're mindless drone with one goal- seek out and destroy intruders. {break} The more time you spend in any one deep, the more monsters will come after you. If you move too slowly, more and more powerful monsters may begin to appear.";
 }
 
 if(n == 6){
@@ -31,7 +31,11 @@ if(n == 7){
 }
 
 if(n == 8){
-	return "";
+	return "You need to know the difference between DEF, RES, and H RES. Most monster attacks do physical damage, so DEF will help against them. Most monster shots do energy damage, so RES will help against those. H RES will reduce the damage you take from fire and lava. {break} You'll have to decide for youself if you'd rather stack one kind of defence or a mix of all three.";
+}
+
+if(n == 9){
+	return "Have you noticed that some of the gear items have special abilities like 'Combo Chain' or 'Proc Shield'? {break} Sadly, if you don't already know the keyword, there's no way to tell what an item power does before you equip it. Once you do equip the item, press [Esc] to see your worn gear, where you can mouse over the icon for details. {break} Important note- gear powers of the same name do not stack.";
 }
 
 

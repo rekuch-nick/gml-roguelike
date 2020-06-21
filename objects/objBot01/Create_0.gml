@@ -1,6 +1,6 @@
 event_inherited();
 
-
+isRobot = true;
 hp = 10;
 mhp = 10;
 

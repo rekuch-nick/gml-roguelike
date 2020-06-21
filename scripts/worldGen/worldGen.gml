@@ -98,8 +98,11 @@ if(pc.deep >= 11){ placeSystem(); }
 
 //bmap[7, 7] = ""; fmap[7, 7] = "pod";
 
-//makeFloorByPercent("prisim", 10);
+if(irandom_range(0, 9) == 0){ makeFloorByPercent("prisim", 10); }
 //makeFloorByPercent("skillpod", 10);
+//makeFloorByPercent("shovel", 10);
+//makeFloorByPercent("scope", 10);
+//makeFloorByPercent("pox", 10);
 
 if(hazGrass){ makeGrass(); }
 
