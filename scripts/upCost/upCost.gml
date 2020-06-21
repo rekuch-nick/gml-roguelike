@@ -1,9 +1,9 @@
 var t = argument0;
 var rt = 0;
 
-if(t == "hp"){ n = pc._mhp - 9; b = 2; rt = 10; }
+if(t == "hp"){ n = pc._mhp - 19; b = 2; rt = 10; }
 if(t == "sp"){ n = pc._msp - 9; b = 10; rt = 10; }
-if(t == "ep"){ n = pc._mep - 9; b = 2; rt = 10; }
+if(t == "ep"){ n = pc._mep - 29; b = 2; rt = 10; }
 if(t == "ap"){ n = pc._map - 3; b = 120; rt = 1; }
 if(t == "evade"){ n = pc._evade + 1; b = 4; rt = 100; }
 if(t == "tevade"){ n = pc._evadeTrap + 1; b = 3; rt = 100; }

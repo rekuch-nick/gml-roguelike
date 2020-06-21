@@ -26,6 +26,7 @@ requireBounds = false;
 
 prisCD = 0;
 usePris = false;
+prisSplits = 0;
 
 afterDamage = 0;
 afterNote = "-";

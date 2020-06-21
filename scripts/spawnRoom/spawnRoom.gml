@@ -13,7 +13,7 @@ for(var a=cx; a<cx+5; a++){ for(var b=cy; b<cy+5; b++){
 
 var mx = cx + 2; var my = cy + 2;
 
-var r = irandom_range(1, 5);
+var r = irandom_range(1, 10);
 var i = pc.deep;
 while(i >= 10){ i -= 10; }
 if(i == 8){ r = 1; }
@@ -66,6 +66,33 @@ if(r == 5){ //walled in gear
 	spawnBlock(objWall, mx, my+1);
 	spawnBlock(objWall, mx+1, my+1);
 	
+}
+if(r == 6){ // skillpod
+	spawnFloor(objSkillPod, mx, my);
+}
+if(r == 7){ // scope
+	spawnFloor(objScope, mx, my);
+}
+if(r == 8){ // shovel
+	spawnFloor(objShovel, mx, my);
+}
+if(r == 9){ // pox
+	for(var a=mx-2; a<mx+3; a++){
+		for(var b=my-2; b<my+3; b++){
+			if(irandom_range(0, 1)==1){
+				spawnFloor(objPox, a, b);
+			}
+		}
+	}
+}
+if(r == 10){ // crystal chamber
+	for(var a=mx-2; a<mx+3; a++){
+		for(var b=my-2; b<my+3; b++){
+			if(irandom_range(0, 1)==1){
+				spawnFloor(objPrisim, a, b);
+			}
+		}
+	}
 }
 
 

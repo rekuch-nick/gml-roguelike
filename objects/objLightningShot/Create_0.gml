@@ -7,3 +7,4 @@ resolveOnHit = true;
 passwall = false;
 requireBounds = true;
 usePris = true;
+prisSplits = 20;

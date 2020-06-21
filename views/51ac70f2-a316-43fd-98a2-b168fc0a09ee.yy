@@ -11,7 +11,8 @@
         "adb5a578-d876-48a6-a049-c29337ec1ec9",
         "2e9e6bbe-d6c0-4e07-b644-cc1d46387c11",
         "ba127f52-0022-4994-8c3e-4ab1bcf747c9",
-        "bcf5f8de-0e79-48ff-8510-caaf3fa62a7e"
+        "bcf5f8de-0e79-48ff-8510-caaf3fa62a7e",
+        "893de9ab-0422-4231-b41a-0b826c35bbcb"
     ],
     "filterType": "GMSprite",
     "folderName": "mobs",

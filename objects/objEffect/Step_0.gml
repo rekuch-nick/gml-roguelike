@@ -59,9 +59,9 @@ if(!passwall){
 	if(ww.bmap[floor(x / 60), floor(y / 60)] != noone){ remove = true; }
 }
 
-if(usePris && prisCD == 0){
+if(usePris && prisCD == 0 && prisSplits > 0){
 	if(ww.fmap[floor(x / 60), floor(y / 60)] != noone && ww.fmap[floor(x / 60), floor(y / 60)].object_index == objPrisim){
-		
+		prisSplits --;
 		prisCD = 5;
 	
 		if(xSpeed == 0){
@@ -69,14 +69,18 @@ if(usePris && prisCD == 0){
 			
 			var s = instance_create_depth(floor(x / 60) * 60 + 30, floor(y / 60) * 60 + 30, -9000, object_index);
 			s.xSpeed = -15; s.ySpeed = 0; s.prisCD = 5;
+			s.prisSplits = prisSplits;
 			var s = instance_create_depth(floor(x / 60) * 60 + 30, floor(y / 60) * 60 + 30, -9000, object_index);
 			s.xSpeed = 15; s.ySpeed = 0; s.prisCD = 5;
+			s.prisSplits = prisSplits;
 		}
 		if(ySpeed == 0){
 			var s = instance_create_depth(floor(x / 60) * 60 + 30, floor(y / 60) * 60 + 30, -9000, object_index);
 			s.xSpeed = 0; s.ySpeed = 15; s.prisCD = 5;
+			s.prisSplits = prisSplits;
 			var s = instance_create_depth(floor(x / 60) * 60 + 30, floor(y / 60) * 60 + 30, -9000, object_index);
 			s.xSpeed = 0; s.ySpeed = -15; s.prisCD = 5;
+			s.prisSplits = prisSplits;
 		}
 	}
 }

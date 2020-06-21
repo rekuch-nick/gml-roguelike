@@ -6,7 +6,7 @@ do {
 	if(r == 0){ commonMob = objMouth; }
 	if(r == 1){ commonMob = objBulb; }
 	if(r == 2){ commonMob = objMouth; }
-	if(r == 3){ commonMob = objBulb; }
+	if(r == 3){ commonMob = objEye; }
 	if(r == 4){ commonMob = objMouth; }
 	if(r == 5){ commonMob = objBulb; }
 	if(r == 6){ commonMob = objMouth; }
@@ -26,7 +26,7 @@ do {
 	if(r == 0){ rareMob = objStriker; }
 	if(r == 1){ rareMob = objFace; }
 	if(r == 2){ rareMob = objStriker; }
-	if(r == 3){ rareMob = objFace; }
+	if(r == 3){ rareMob = objTear; }
 	if(r == 4){ rareMob = objStriker; }
 	if(r == 5){ rareMob = objFace; }
 	if(r == 6){ rareMob = objStriker; }
