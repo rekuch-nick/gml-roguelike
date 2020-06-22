@@ -55,6 +55,12 @@ if(!timeless){ timeCD --; }
 if(timeCD < 1){ remove = true; }
 
 
+if(object_index == objLightningShot){
+	if(ww.bmap[floor(x / 60), floor(y / 60)] != noone){
+		impactTile(floor(x / 60), floor(y / 60), "bolt");
+	}
+}
+
 if(!passwall){
 	if(ww.bmap[floor(x / 60), floor(y / 60)] != noone){ remove = true; }
 }
@@ -65,7 +71,7 @@ if(usePris && prisCD == 0 && prisSplits > 0){
 		prisCD = 5;
 	
 		if(xSpeed == 0){
-			show_debug_message(123)
+			
 			
 			var s = instance_create_depth(floor(x / 60) * 60 + 30, floor(y / 60) * 60 + 30, -9000, object_index);
 			s.xSpeed = -15; s.ySpeed = 0; s.prisCD = 5;

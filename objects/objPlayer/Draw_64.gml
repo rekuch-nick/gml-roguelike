@@ -19,6 +19,8 @@ if(dyingTime > 0){
 	
 }
 
+draw_set_font(fntSmall);
+draw_text(30, 30, string(xSpot) + ", " + string(ySpot));
 
 
 	

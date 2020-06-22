@@ -33,7 +33,7 @@ if(rollSelf){
 	
 	while(points > 0){
 		var r = irandom_range(1, 20);
-		var allowRare = irandom_range(1, 10) == 1 ? true : false;
+		var allowRare = irandom_range(1, 20) == 1 ? true : false;
 		
 		if(r == 1 && points >= 1 && (isBody || allowRare)){
 			hp += irandom_range(7, 13);

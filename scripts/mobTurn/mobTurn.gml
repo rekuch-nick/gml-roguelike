@@ -119,8 +119,10 @@ for(var oop = 0; oop<2; oop++){
 		if(huntPlayer && !dontStep){
 			
 			pathFind(xSpot, ySpot, pc.xSpot, pc.ySpot, false);
-			mobStep(xNext, yNext, true);
-			ap --;
+			if(!noPath){
+				mobStep(xNext, yNext, true);
+				ap --;
+			}
 			
 		}
 		

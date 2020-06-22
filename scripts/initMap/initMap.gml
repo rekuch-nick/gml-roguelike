@@ -39,6 +39,7 @@ for(var a=0; a<xBounds; a++){
 		if(ts == "node"){ t = objNode; }
 		if(ts == "block"){ t = objBlock; }
 		if(ts == "wall"){ t = objWall; }
+		if(ts == "weakWall"){ t = objWeakWall; }
 		if(ts == "hchest"){ t = objHiddenChest; }
 		if(ts == "door"){ t = objDoor; }
 		if(ts == "chest"){ t = objChest; }

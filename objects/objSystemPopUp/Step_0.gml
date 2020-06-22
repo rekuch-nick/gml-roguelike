@@ -67,6 +67,10 @@ if(clickB && mouse_check_button_pressed(mb_left)){
 	}
 	if(pc.system == "comm"){
 		// gain buff
+		var s = instance_create_depth(0, 0, -6001, objStatus);
+		s.sprite_index = imgStatusZeroPing;
+		s.isBuff = true; s.deeps = 0;
+		
 		pc.systemPoints -= costB; pc.mouseReleased = false; ww.popUp = noone; instance_destroy();
 	}
 	if(pc.system == "trans"){

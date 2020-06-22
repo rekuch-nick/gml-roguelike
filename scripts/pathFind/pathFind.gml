@@ -72,7 +72,7 @@ while(status == "not done"){
 		if(cx < ww.xStart || cy < ww.yStart || cx >= ww.xBounds || cy >= ww.yBounds){ continue; }
 		
 		//block check
-		if( ww.bmap[cx, cy] != noone){ continue; }
+		if( ww.bmap[cx, cy] != noone && ww.bmap[cx, cy] != ""){ continue; }
 		if(avoidMobs && ww.mmap[cx, cy] != noone){ continue; }
 		
 		//assign movement cost and parrent values
@@ -93,7 +93,7 @@ while(status == "not done"){
 
 
 if(status == "found path"){
-	
+	noPath = false;
 	//write the path to a list
 	var xx = xEnd; var yy = yEnd;
 	
@@ -132,6 +132,7 @@ if(status == "found path"){
 	
 	
 } else {
+	noPath = true;
 	//exit without giving a path
 	
 	

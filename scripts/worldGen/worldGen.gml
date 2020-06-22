@@ -39,12 +39,12 @@ rollMobs();
 //pick trapType
 curTrap = objSpikeTrap;
 
+clearMap();
 
+var style = irandom_range(1, 2); //////////////////////////////////\\\/\\/\\/
+if(pc.deep < 4){ style = 2; }
 
-
-
-
-//shift pc into place for mazemaking
+//shift pc into place for mazemaking and sanity
 if((pc.xSpot - xStart) % 2 != 0){
 	pc.xSpot ++;
 	if(pc.xSpot >= xBounds){ pc.xSpot -= 2; }
@@ -56,9 +56,24 @@ if((pc.ySpot - yStart) % 2 != 0){
 pc.x = pc.xSpot * 60 + 30;
 pc.y = pc.ySpot * 60 + 30;
 
-clearMap();
-perfectMaze();
-removeWalls(15);
+
+
+if(style == 1){
+	perfectMaze();
+	removeWalls(15);
+}
+
+if(style == 2){
+	smoothRooms();
+}
+
+if(style == 3){
+	diggerRoom();
+}
+
+
+
+
 
 
 if(hasWater){ makeRiver(); }
@@ -98,7 +113,7 @@ if(pc.deep >= 11){ placeSystem(); }
 
 //bmap[7, 7] = ""; fmap[7, 7] = "pod";
 
-if(irandom_range(0, 9) == 0){ makeFloorByPercent("prisim", 10); }
+if(irandom_range(0, 19) == 0){ makeFloorByPercent("prisim", 10); }
 //makeFloorByPercent("skillpod", 10);
 //makeFloorByPercent("shovel", 10);
 //makeFloorByPercent("scope", 10);

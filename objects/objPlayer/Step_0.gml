@@ -130,7 +130,11 @@ if(!moving && ap > 0 && aiming == -1 && !dontMoveUntilKeysReleased ){
 				if(canAttack && (!mouseWalk || (floor(mouse_x / 60) == tx && floor(mouse_y / 60) == ty) )){ 
 					//playerAttack(tx, ty); 
 					mobAttack(pc, ww.mmap[tx, ty]);
-					ap = 0;
+					if(hasStatus(imgStatusZeroPing)){
+						ap --;
+					} else {
+						ap = 0;
+					}
 					canAttack = false;
 				}
 				

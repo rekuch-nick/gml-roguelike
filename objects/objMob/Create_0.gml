@@ -11,6 +11,8 @@ hp = 10;
 mhp = 10;
 foe = true;
 
+noPath = false;
+
 pointAtPlayer = false;
 
 huntPlayer = false;

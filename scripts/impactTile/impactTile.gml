@@ -30,6 +30,16 @@ if(ww.bmap[a, b] != noone){
 		}
 		
 	}
+	
+	if(note == "bomb" || note == "shovel" || note == "bolt" || note == "fire"){
+		if(t == objWeakWall){
+			pleaseSystem("build", 2);
+			instance_destroy(ww.bmap[a, b]);
+			ww.bmap[a, b] = noone;
+			
+			instance_create_depth(a * 60 - 15, b * 60 - 15, -9000, objWeakChip);
+		}
+	}
 }
 
 

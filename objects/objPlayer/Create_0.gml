@@ -3,6 +3,7 @@ depth = -3000;
 
 xNext = -1;
 yNext = -1;
+noPath = false;
 
 mouseWalk = false;
 mouseReleased = false;

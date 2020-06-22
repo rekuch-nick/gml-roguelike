@@ -28,6 +28,10 @@ if(a >= x && a < x + 40 && b >= y && b < y + 40){
 		pc.helpText = "Damage Reduction: Take half damage from everything.";
 	}
 	
+	if(sprite_index == imgStatusZeroPing){
+		pc.helpText = "Zero Ping: Attacking costs 1 AP instead of all AP.";
+	}
+	
 	if(sprite_index == imgStatusDangerousTraps){
 		pc.helpText = "Dangerous Traps: Take double damage from traps.";
 	}

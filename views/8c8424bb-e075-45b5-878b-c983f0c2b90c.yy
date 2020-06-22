@@ -24,7 +24,13 @@
         "6348b4cd-ba7b-4fbe-a3ec-2588666218ab",
         "4120a462-b5e6-4716-bd1d-0d909a99480c",
         "afde7d93-2a66-4877-b44f-d8e1c9134dae",
-        "34b6bafc-46a6-4ae6-8a9f-bd5b4ce4076b"
+        "34b6bafc-46a6-4ae6-8a9f-bd5b4ce4076b",
+        "22f6a251-8d56-4b80-b52b-8d43795d29d4",
+        "5156de5d-77c6-446b-8b70-a6f151e27aa7",
+        "6f876c1c-3a17-41aa-a624-aae7967d6672",
+        "30d15352-860b-43e8-a6ed-737249c60ceb",
+        "097d50b3-f1bd-492e-8f70-04aacdf33324",
+        "1de0d525-22ed-4d77-9623-9a05d07f611f"
     ],
     "filterType": "GMScript",
     "folderName": "map gen",
